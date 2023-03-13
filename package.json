@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Utilities and tools for things related to Dragon City",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --declaration",
+    "dev": ""
   },
   "repository": {
     "type": "git",
