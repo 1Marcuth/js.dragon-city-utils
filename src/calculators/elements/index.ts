@@ -18,7 +18,7 @@ function calculateStrongs(elements: string[]): string[] {
     return strongs
 }
 
-function calculateWeaknessses(firstElement: string): string[] | [] {
+function calculateWeaknesses(firstElement: string): string[] {
     let weaknesses: string[] = []
 
     for (const element of Object.keys(elementsConfig)) {
@@ -32,4 +32,4 @@ function calculateWeaknessses(firstElement: string): string[] | [] {
     return weaknesses
 }
 
-export default { calculateStrongs, calculateWeaknessses }
+export { calculateStrongs, calculateWeaknesses }

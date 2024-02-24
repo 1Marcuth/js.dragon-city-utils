@@ -1,8 +1,8 @@
-import { dragonPhases } from "../../../constants"
+import { DragonPhases } from "../../../enums"
 import BaseStaticDownloader from "../../base"
 
 class DragonFlashAnimation extends BaseStaticDownloader {
-    constructor(
+    public constructor(
         imageName: string,
         phase: number,
         skin: number | null = null
@@ -11,8 +11,8 @@ class DragonFlashAnimation extends BaseStaticDownloader {
 
         let skinStr = ""
 
-        if (phase < dragonPhases.EGG || phase > dragonPhases.ADULT) {
-            throw new Error(`${phase} Not a valid number for a dragon's phase. Choose a number between ${dragonPhases.EGG} and ${dragonPhases.ADULT}`)
+        if (phase < DragonPhases.Egg || phase > DragonPhases.Adult) {
+            throw new Error(`${phase} Not a valid number for a dragon's phase. Choose a number between ${DragonPhases.Egg} and ${DragonPhases.Adult}`)
         }
 
         if (skin && skin > 0) {

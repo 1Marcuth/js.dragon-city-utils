@@ -1,7 +1,9 @@
-import DragonFlashAnimation from "./flash/dragon"
-import DragonSpineAnimation from "./spine/dragon"
+import _DragonFlashAnimation from "./flash/dragon"
+import _DragonSpineAnimation from "./spine/dragon"
 
-export default {
-    DragonFlashAnimation,
-    DragonSpineAnimation
+module animations {
+    export class DragonFlashAnimation extends _DragonFlashAnimation {}
+    export class DragonSpineAnimation extends _DragonSpineAnimation {}
 }
+
+export default animations

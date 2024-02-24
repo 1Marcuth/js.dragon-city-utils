@@ -1,3 +1,7 @@
-import GeneralMusic from "./musics"
+import _GeneralMusic from "./musics"
 
-export default { GeneralMusic }
+module sounds {
+    export class GeneralMusic extends _GeneralMusic {}
+}
+
+export default sounds

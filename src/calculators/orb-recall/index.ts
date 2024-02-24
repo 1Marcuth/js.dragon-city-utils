@@ -28,4 +28,4 @@ function calculateRecallGain(dragonLevel: number, dragonStars: number) {
     return orbsGain
 }
 
-export default { calculateRecallGain }
+export { calculateRecallGain }
